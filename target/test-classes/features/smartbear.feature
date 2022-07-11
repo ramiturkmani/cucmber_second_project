@@ -17,7 +17,7 @@ Feature: SmartBear
     And user clicks on Login button
     Then user should be routed to "http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/"
 
-  #@Regression
+  @Regression
   Scenario: Validate "Web Orders" menu items
     When user enters username as "Tester"
     And user enters password as "test"
@@ -37,7 +37,7 @@ Feature: SmartBear
     When user clicks on "Uncheck All" button
     Then all rows should be unchecked
 
-  #@Regression
+  @Regression
   Scenario: Validate adding new order
     When user enters username as "Tester"
     And user enters password as "test"
@@ -53,7 +53,7 @@ Feature: SmartBear
     Then user should see their order displayed in the "List of All Orders" table
     And validate all information entered displayed correct with the order
 
-  #@Regression
+  @Regression
   Scenario: Validate "Delete Selected" button
     When user enters username as "Tester"
     And user enters password as "test"
@@ -62,4 +62,4 @@ Feature: SmartBear
     When user clicks on "Check All" button
     And user clicks on "Delete Selected" button
     Then validate all orders are deleted from the "List of All Orders"
-    And validate user sees "List of orders is empty. In order to add new order use this link." Message
+    And validate user sees "List of orders is empty. In order to add new order use this link." message
